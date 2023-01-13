@@ -1,16 +1,4 @@
 
-window.onload = function() {
-    let utterance = new SpeechSynthesisUtterance("Welcome sir,I'm Alpha, your Digital Assistant");
-    window.speechSynthesis.speak(utterance);
-    
-    
-};
-    
-    // ----------------------------------------------------------
-    
-
-
-
 listen = document.querySelector('.display')
 btnListen = document.querySelector('.speak')
 
