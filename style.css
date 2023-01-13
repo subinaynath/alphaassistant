@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-body{
+    padding: 150px 0;
+    position: relative;
+    height: fit-content;
+    top: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 0, 8, 0.3),rgba(3, 0, 14, 0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;    
+}
+.content{
+    position: relative;
+    top: 30%;
+    z-index: 5;
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-size: 50px;
+    color: rgb(221, 224, 25);
+    font-weight: bold;
+    text-shadow: -7px -2px 4px rgba(150, 150, 150, 1);
+
+
+}
+.display{
+    height: 15%;
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5%;
+    background-color: rgb(5, 101, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(70, 243, 17);
+}
+.speak{
+    font-size: 20px;
+    padding: 5px 15px;
+    color:  rgb(70, 243, 17);
+    background-color:rgb(5, 101, 245) ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.speak:hover{
+    font-weight: bold;
+}
+.commands p{
+    font-size: 40px;
+    color: rgb(2 255 255);
+    font-weight: bold;
+}
+.commands ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.commands ul li{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(5 233 33);
+    line-height: 2rem;
+}
+.thanks{
+    color: aquamarine;
+    padding: 10px;
+}
+footer{
+    width: 30%;
+    margin: 15px;
+    font-size: 15px;
+    color: antiquewhite;
+    background-color: rgb(0, 3, 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px;
+    border-radius: 10px;
+}
+.contact {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+.contact a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+/* Making Responsive */
+@media (min-aspect-ratio: 16/9){
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    #myVideo{
+        height: 100%;
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .hello{
+        font-size: 30px;
+    }
+    .display{
+        width: 100%;
+        font-size: 20px;
+    }
+    .speak{
+        font-size: 15px;
+    }
+    .commands p{
+        font-size: 25px;
+    }
+    .commands ul li{
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+    .thanks{
+        font-size: 22px;
+    }
+    footer{
+        width: 100%;
+        margin-bottom: 0;
+    }
+   
+}
